@@ -1,0 +1,206 @@
+/* ------//---------------------------------
+    Color Declarations
+------//---------------------------------- */
+:root {
+    --primary-color: #82bf4c;
+    --secondary-color: #ff9d1f;
+    --alt-color: #634a33;
+    --text-color: #212226;
+    --white-color: #fff;
+    --main-font: "Work Sans", sans-serif;
+    --text-font: Quicksand, sans-serif;
+}
+
+/* ------//---------------------------------
+    Bootstrap Overides
+------//---------------------------------- */
+.btn {
+    color: var(--text-color);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+/* ------//---------------------------------
+    Reset
+------//---------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--text-font);
+}
+
+p {
+    font-family: var(--main-font);
+    font-size: 0.813em;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* ------//---------------------------------
+    Home
+------//---------------------------------- */
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/home/home-bg.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+#home-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#home-content-container {
+    z-index: 2;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+}
+
+#home-heading {
+    transition: all 300ms ease-in-out;
+}
+
+#home-heading h1,
+#home-heading h2,
+#home-heading h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#home-heading h1 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin: 0 auto 40px auto;
+}
+
+#home-heading h1 span {
+    color: var(--primary-color);
+}
+
+#home-heading h2 {
+    font-size: 3.0em;
+    font-weight: 100;
+    margin: 30px auto;
+}
+
+#home-heading h2#company span {
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+#home-heading h3 {
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-weight: 700;
+    margin: 0 auto 20px auto;
+}
+
+#home-heading h2#company {
+    margin-bottom: 20px;
+}
+
+#home-info p {
+    font-family: var(--text-font);
+    font-size: 35px;
+    font-weight: 100;
+    margin: 0 auto 50px auto;
+}
+
+#home-info p span {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+#action-button {
+    margin-top: 6rem;
+}
+
+#action-button span {
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+}
+
+.request-btn {
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    transition: all 400ms linear;
+    letter-spacing: 0.3rem;
+    font-family: var(--main-font);
+    font-weight: 600;
+}
+
+.request-btn:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.suggest-btn {
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: all 400ms linear;
+    letter-spacing: 0.3rem;
+    font-family: var(--main-font);
+    font-weight: 600;
+}
+
+.suggest-btn:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+#arrow-down a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 1;
+    font-size: 32px;
+    margin-left: -16px;
+    color: var(--white-color);
+    transition: all .3s ease;
+}
+
+#arrow-down a:hover,
+#arrow-down a:focus {
+    color: var(--secondary-color);
+}
+
+/* End of Home Styling */
